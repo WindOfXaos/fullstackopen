@@ -11,7 +11,7 @@ sequenceDiagram
         server-->>browser: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
         deactivate server
     end
-    Note over browser: The difference between main.js and spa.js is that the latter<br>is refactored and maintains its own storage in the browser<br>to show updates without unnecessary calls
+    Note over browser: The difference between main.js and spa.js is that the latter<br>is refactored and maintains its own storage in the browser<br>to show updates without unnecessary calls by overriding submission behaviour.<br>Also spa.html doesn't have action or method attributes since it will be overridden by spa.js
 
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
